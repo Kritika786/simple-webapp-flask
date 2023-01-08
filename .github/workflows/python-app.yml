@@ -38,5 +38,5 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: |
-        FLASK_APP=app.py flask run --host=0.0.0.0
+        FLASK_APP=app.py flask run 
         pytest
